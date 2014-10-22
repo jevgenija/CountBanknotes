@@ -13,12 +13,12 @@ if (!empty($postPrice)) {
     exit();
 }
 
-if(isset($_SESSION['result']) && !empty($_SESSION['result'])){
+if(!empty($_SESSION['result'])){
     $result = $_SESSION['result'];
     unset($_SESSION['result']);
 }
 
-if(isset($_SESSION['price']) && !empty($_SESSION['price'])){
+if(!empty($_SESSION['price'])){
     $price = $_SESSION['price'];
     unset($_SESSION['price']);
 }else{
